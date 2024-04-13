@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script> src="./Login.js"</script>
+</head>
+<body>
+    <div class="container">
+        <div class="BackGround Right">
+            <div class="img">
+                <img src="./pt1.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="BackGround Bottom">
+            <div class="img">
+                <img src="./pt2.png" alt="" width="100%">
+            </div>
+        </div>
+        <div class="box_container">
+            <div class="box">
+                <img src="./sgroup.png" alt="" width="50%" id="img" >
+                <div class="box_item">
+                    <img src="./SIcon.png" alt="" width="50px" id="Icon">
+                    <div class="content">
+                        <div class="title">
+                            <div class="login">
+                                Login
+                                <div class="line"></div>
+                            </div>
+                            <div class="login">
+                                Register
+                            </div>
+                        </div>
+                        <p class="name">
+                            Email
+                        </p>
+                        <input type="text" id="EmailID" >
+                        <p class="name">
+                            Password
+                        </p>
+                        <input type="text" id="PasswordID"  >
+                        <div class="warning" id="Wn">
+                            Sai tài khoản hoặc mật khẩu!!
+                        </div>
+                        <div class="tick">
+                            <input type="checkbox" style="margin-bottom: 0px;">
+                            Remember me
+                        </div>
+                        <button onclick="MyFunction()">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./Login.js"></script>
+</body>
+</html>

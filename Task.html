@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Task.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="form_container" id="IdForm">
+        <div class="form">
+            <div style="display: flex;justify-content: end;" id="IdClose" onclick="closeFunction()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div style="display: flex;justify-content: center;font-weight: 700;font-size: 24px;">
+                Add new todo
+            </div>
+            <input type="text" placeholder="Catagory Etc Marketing" id="txtCategory">
+            <input type="text" placeholder="Title" id="txtTitle">
+            <input type="text" style="padding-bottom: 50px;"placeholder="Content" id="txtContent">
+            <button onclick="SubmitFunction('Todo')">Submit</button>
+        </div>
+    </div>
+    <div class="form_container" id="IdForm2">
+        <div class="form">
+            <div style="display: flex;justify-content: end;" id="IdClose2" onclick="closeFunction()">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div style="display: flex;justify-content: center;font-weight: 700;font-size: 24px;">
+                Edit Task
+            </div>
+            <input type="text" placeholder="Catagory Etc Marketing" id="txtCategory2">
+            <input type="text" placeholder="Title" id="txtTitle2">
+            <input type="text" style="padding-bottom: 50px;"placeholder="Content" id="txtContent2">
+            <div style="display: flex;justify-content: space-around;overflow: auto;gap: 10px;">
+                <div>
+                    <input name="Condition" type="radio" value="Todo">
+                    Todo
+                </div>
+                <div>
+                    <input type="radio" name="Condition" value="Doing">
+                    Doing
+                </div>
+                <div>
+                    <input type="radio" name="Condition" value="Completed">
+                    Completed
+                </div>
+                <div>
+                    <input type="radio" name="Condition" value="Blocked">
+                    Blocked
+                </div>
+            </div>
+            <button onclick="SubmitFunction2()">Submit</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <img src="./LogoTask.png" alt="" width="180px" id="LogoTask">
+            <button onclick="addFunction()" class="add_button">
+                <img src="./add.svg" alt="">
+                <p class="font400 size16">New Task</p>
+            </button>
+        </div>
+        <div class="box">
+            <div class="box_item">
+                <div class="header_container" style="background-color: #00A6DA;">
+                    <div class="header" >
+                        To do
+                    </div>
+                    <div class="SL" id="SLTodo" style="background-color: #00CDDA;"></div>
+                </div>
+                <div class="line" style="background-color: #00A6DA;"></div>
+                <div class="content" id="Todo">
+                     
+                </div>
+            </div>
+            <div class="box_item">
+                <div class="header_container" style="background-color: #CCAC038F;">
+                    <div class="header" >
+                        Doing
+                    </div>
+                    <div class="SL" id="SLDoing" style="background-color: #DAB700;"></div>
+                </div>
+                <div class="line" style="background-color: #CCAC038F;"></div>
+                <div class="content" id="Doing"></div>
+            </div>
+            <div class="box_item">
+                <div class="header_container" style="background-color: #3BC057;">
+                    <div class="header" >
+                        Completed
+                    </div>
+                    <div class="SL" id="SLCompleted" style="background-color: #69CE7E;"></div>
+                </div>
+                <div class="line" style="background-color: #3BC057;"></div>
+                <div class="content" id="Completed"></div>
+            </div>
+            <div class="box_item">
+                <div class="header_container" style="background-color: #E74C3C;">
+                    <div class="header" >
+                        Blocked
+                    </div>
+                    <div class="SL" id="SLBlocked" style="background-color: #E74C3C;"></div>
+                </div>
+                <div class="line" style="background-color: #E74C3C;"></div>
+                <div class="content" id="Blocked"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./Task.js"></script>
+    
+</body>
+</html>
